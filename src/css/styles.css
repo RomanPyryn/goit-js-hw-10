@@ -12,9 +12,47 @@ body {
   line-height: 1.5;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 #search-box {
   font: inherit;
+  font-weight: 700;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px solid slategray;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  font-weight: 400;
+}
+
+.country-list__item, 
+.country-list__item--big, 
+.country-info {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.country-list__item--big {
+  display: flex;
+  align-items: center;
+
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.item__img {
+  margin-right: 5px;
+}
+
+.item__bold {
+  font-weight: 700;
 }
